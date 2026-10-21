@@ -1,0 +1,14 @@
+# Apache Rewrite Rules for Inventory Management System
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Route all requests to index.php (except direct file/directory access)
+RewriteBase /
+
+# Allow existing files to be served directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route all other requests to index.php
+RewriteRule ^(.*)$ index.php [QSA,L]

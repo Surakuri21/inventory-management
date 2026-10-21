@@ -1,0 +1,39 @@
+# Database config with credentials
+config/database.php
+
+# Environment files
+.env
+.env.*
+! .env.example
+
+# Logs
+*.log
+
+# Uploads
+assets/uploads/*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build files
+node_modules/
+bower_components/
+
+# SSL private keys
+nginx/ssl/*.key
+
+# Docker override (local secrets)
+docker-compose.override.yml
+
+# Accidental artifact file
+--data-urlencode
+
+# Git
+.git/
